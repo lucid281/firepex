@@ -1,7 +1,7 @@
 # firepex
 A minimal Python 3 + Fire + PEX app template. Helps bootstrap building Python code into a single, portable, executable binary by providing an app template and a starter script.
 
-> setup a venv if you want, in not here to babysit.
+> setup a venv if you want, I'm not here to babysit.
 
 
 ## 1: Dependencies
