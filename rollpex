@@ -4,4 +4,4 @@ pip wheel -e .
 pex --python=python3 -f $PWD fire fireapp -e fireapp.main -o firepex
 chmod +x firepex
 
-echo 'If this did not puke, run ./fireapex'
+echo 'If this did not puke, run ./firepex'
