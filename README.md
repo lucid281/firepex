@@ -23,9 +23,9 @@ Usage:       fireapp
 ```
 
 ## Build
-run `rollpex`, a quick n' dirty bash script to create a wheel, build the pex file, and chmod +x the resulting pex file.
+run `rollpex`, a quick n' dirty bash script to create a wheel, build the pex file, and chmod +x the resulting `firepex` file.
 
-> run: `./firepex`; should print:
+run: `./firepex`; should print:
 
 ```
 user@user-pc:~/firepex$ ./firepex
@@ -40,7 +40,7 @@ Usage:       firepex
 
 Play around with the cli and check out Fire! It's great!
 
-### More
+### Execution Environment
 
 `./firepex` runs likes a script..
 
@@ -49,7 +49,7 @@ user@user-pc:/firepex$ head -n1 firepex
 #!/usr/bin/env python3.6
 ```
 
-In this case, the shell looks for Python 3.6. This means I need Python 3.6 in the deployed environment to run this, but all my dependencies are included.
+In this case, the shell looks for Python 3.6. I need that in the deployed environment to run `firepex`, but all my dependencies are included.
 
 When you run `./rollpex`, the `#!` is determined from your current python environment OR it can be overridden with a flag in Pex.
 
