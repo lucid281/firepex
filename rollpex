@@ -1,7 +1,9 @@
 #!/bin/bash
 
 pip wheel -e .
-pex --python=python3 -f $PWD fire fireapp -e fireapp -o firepex
+# on my system, disabling the cache was the only way to get code updates to
+# work without a 'rm -rf ~/.pex/'
+pex --disable-cache -f $PWD fire fireapp -e fireapp -o firepex
 chmod +x firepex
 
-echo 'If this did not puke, run ./firepex'
+echo "If this did not puke, run ./firepex"
